@@ -34,7 +34,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         f"Assalomu alaykum, {user.first_name}! 👋\n\n"
         "📚 *1-sinf o'quvchilarini qabul qilish bo'yicha murojaat boti*\n\n"
-        "Ushbu bot orqali maktabga murojaat yuborishingiz mumkin.\n\n"
+        "Ushbu bot orqali sizni qiynayotgan masalalar yuzasidan Jizzax viloyat MMTB ning mas'ul xodimlariga murojaat yuborishingiz mumkin.\n\n"
         "Boshlash uchun quyidagi tugmani bosing:",
         parse_mode="Markdown",
         reply_markup=ReplyKeyboardMarkup(
@@ -84,7 +84,7 @@ async def telefon_qabul(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         f"✅ Telefon qabul qilindi: *{telefon}*\n\n"
         "3️⃣ *Yashash manzilingizni* kiriting:\n"
-        "_(Misol: Toshkent sh., Yunusobod tumani, Amir Temur ko'chasi 10-uy)_",
+        "_(Misol: Jizzax sh., Omazor MFY, Amir Temur ko'chasi 10-uy)_",
         parse_mode="Markdown",
         reply_markup=ReplyKeyboardRemove()
     )
@@ -97,7 +97,7 @@ async def manzil_qabul(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         f"✅ Manzil qabul qilindi.\n\n"
         "4️⃣ *Murojaat matnini* kiriting:\n"
-        "_(Farzandingiz, murojaat sababi va boshqa ma'lumotlarni yozing)_",
+        "_(Farzandingizni maktabga qa'bul jarayonida uchragan muammolar, murojaat sababi va boshqa ma'lumotlarni yozing)_",
         parse_mode="Markdown"
     )
     return MUROJAAT
