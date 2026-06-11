@@ -17,10 +17,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Bot tokeni
-BOT_TOKEN = "YANGI_TOKENINGIZNI_SHU_YERGA_QOYING"
+BOT_TOKEN = "8650353768:AAHky4gfil-22HF9xJzJ539uIvmaEtmQnII"
 
 # Admin Telegram ID - murojaatlar shu chatga keladi
-ADMIN_CHAT_ID = "ADMIN_TELEGRAM_ID"  # Masalan: "123456789"
+ADMIN_CHAT_ID = "7939112830"  # Masalan: "123456789"
 
 # Holatlar
 FISH, TELEFON, MANZIL, MUROJAAT, ASOS = range(5)
@@ -157,7 +157,7 @@ async def murojaatni_yuborish(update: Update, context: ContextTypes.DEFAULT_TYPE
         f"📎 *Asos:* {data.get('asos_text', '—')}\n"
         "━━━━━━━━━━━━━━━━━━\n"
         f"🆔 Foydalanuvchi ID: `{user.id}`\n"
-        f"👤 Username: @{user.username or 'yo'q'}"
+        f"👤 Username: @{user.username or 'yoq'}"
     )
 
     try:
@@ -248,3 +248,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
